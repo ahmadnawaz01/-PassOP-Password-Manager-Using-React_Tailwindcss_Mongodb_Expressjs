@@ -33,7 +33,7 @@ const Manager = () => {
     }
 
     const savepassword = () => {
-        if(form.site.length>3 && form.site.username>3 && form.site.password>4)
+        if(form.site.length>3 && form.username.length>3 && form.password.length>3)
         {
             const newEntry = { ...form, id: uuidv4() };
             const updatedArray = [...passwordarrays, newEntry];
@@ -79,8 +79,8 @@ const Manager = () => {
             <div className="fixed top-0 z-[-2] h-full w-full bg-green-50 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
 
            
-            <div className="p-2 md:p-0 md:mycontainer min-h-[88vh] mx-auto max-w-4xl">
-                <h1 className='text-4xl text font-bold text-center'> 
+            <div className="p-2 md:p-0 md:mycontainer  min-h-[88vh] mx-auto max-w-4xl">
+                <h1 className='text-4xl text pt-6 font-bold text-center'> 
                     <span className='text-green-500'>&lt;</span>Pass<span className="text-green-500">OP/&gt;</span>
                 </h1>
                 <p className='text-green-900 text-center text-lg' >Your Own Password Manager</p>
